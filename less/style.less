@@ -1,0 +1,106 @@
+body, html, h3 {
+	font-family: 'Source Sans Pro', sans-serif;
+	height: 100%;
+	width: 100%;
+}
+
+h1.sam {
+	font-family: DancingScript, cursive;
+	text-align: center;
+}
+
+div.section {
+	-webkit-box-align: center;
+	   -moz-box-align: center;
+	    -ms-box-align: center;
+	        box-align: center;
+	-webkit-box-pack: center;
+	   -moz-box-pack: center;
+	    -ms-box-pack: center;
+	        box-pack: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-box;
+	display: box;
+	
+	width: 100%;
+	height: 100%;
+}
+
+div.section:nth-child(even) {
+	background-color: #ddd;
+}
+
+.byline {
+	margin: 20px 0 50px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-box;
+	display: box;
+	-webkit-box-align: center;
+	   -moz-box-align: center;
+	    -ms-box-align: center;
+	        box-align: center;
+
+	&::before, &::after {
+		content: "";
+		display: block;
+		-webkit-box-flex: 1;
+		   -moz-box-flex: 1;
+		    -ms-box-flex: 1;
+		        box-flex: 1;
+		height: 0;
+		padding-top: 1px;
+		border-bottom: 1px dashed #666;
+	}
+	
+	h3 {
+		margin: 0 20px;
+	}
+	img {
+		display: block;
+		margin: 0 20px;
+	}
+}
+
+
+.intro-rounded {
+	@presHeight: 100px;
+	width: @presHeight;
+	height: @presHeight;
+	border-radius: @presHeight / 2;
+}
+
+h3.hit.me.up {
+	font-weight: 900;
+}
+
+.go.on.do.it {
+	font-size: 1.3em;
+	a i.fa {
+		color: #333;
+	}
+}
+
+@media (min-width: 768px) {
+	h1.sam {
+		position: relative;
+		top: 60px;
+		text-align: right;
+	}
+	.byline {
+		margin-bottom: 20px;
+	}
+	.byline::before {
+		min-width: 50%;
+	}
+	.go.on.do.it {
+		a.phone {
+			color: #333;
+			&:hover {
+				text-decoration: none;
+				cursor: default;
+			}
+		}
+	}
+}
