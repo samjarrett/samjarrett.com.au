@@ -5,7 +5,7 @@ body, html, h3 {
 }
 
 h1.sam {
-	font-family: DancingScript, cursive;
+	font-family: 'Dancing Script', cursive;
 	text-align: center;
 }
 
@@ -25,10 +25,6 @@ div.section {
 	
 	width: 100%;
 	height: 100%;
-}
-
-div.section:nth-child(even) {
-	background-color: #ddd;
 }
 
 .byline {
@@ -82,6 +78,32 @@ h3.hit.me.up {
 	}
 }
 
+.konamified {	
+	background-color: #333;
+	background-position: center center;
+	background-size: cover;
+	background-image: url(../img/lizlemon.gif);	
+	color: #fff;
+	
+	a {
+		color: #9DBDDA;
+	}
+	
+	.byline {
+		&::before, &::after {
+			border-bottom: 1px dashed #ddd;
+		}
+		img {
+			opacity: 0.5;
+		}
+	}
+	.go.on.do.it {
+		a i.fa {
+			color: #fff;
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	h1.sam {
 		position: relative;
@@ -102,5 +124,8 @@ h3.hit.me.up {
 				cursor: default;
 			}
 		}
+	}
+	.konamified .go.on.do.it a.phone {
+		color: #fff;
 	}
 }
