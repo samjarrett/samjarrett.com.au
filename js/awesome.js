@@ -107,7 +107,7 @@ var Konami = function (callback) {
 var superSecretStuff = new Konami();
 superSecretStuff.code = function() { 
 	var currentScrollPosition = $(document).scrollTop();
-	$('html,body').animate({ scrollTop: 0 }, 1000, 'easeOutExpo', function() {
+	$('html,body').animate({ scrollTop: 0 }, 1000, 'swing', function() {
 		$('body').addClass('konamified'); 
 		setTimeout(function() {
 			$('body').removeClass('konamified');
