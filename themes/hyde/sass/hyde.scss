@@ -78,7 +78,10 @@ html {
 /* About section */
 .sidebar-about img {
   border-radius: 50%;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem auto;
+  @media (min-width: 48em) {
+    margin-left: 0;
+  }
 }
 .sidebar-about h1 {
   color: #fff;
