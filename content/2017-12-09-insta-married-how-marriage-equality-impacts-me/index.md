@@ -7,6 +7,8 @@ date = 2017-12-09 09:00:00+10:00
 
 > Note: This is a re-post from an article I published at work on December 9, 2017, the day after marriage equality passed the Australian parliament.
 
+<!-- more -->
+
 In 2009 I met a man. It was an interesting time for me, I’d just moved to Melbourne for a job, and had left behind my entire family and social network. We caught up a few times, but because of some personal drama, nothing much came of it until May of the following year.
 
 In 2010, we finally started properly dating (literally, I made him “ask me out” — or as the kids say these days “DTR”). By July, we were seeing each other nearly every day, and by December, he was living with me. Compared to other relationships I’d been in, this was different. We moved faster — we just clicked together. Our friends became our friends. Our families got along. We just worked.

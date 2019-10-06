@@ -7,6 +7,8 @@ date = 2018-05-15 09:00:00+10:00
 
 > Note: This is a re-post from an article I published at work on May 15, 2018, two days before IDAHOBIT.
 
+<!-- more -->
+
 First off, let’s check our acronym. IDAHOBIT stands for International Day Against Homophobia, Biphobia, Intersexism and Transphobia. For the rest of this blog post, we’ll be a hobbit free zone, and I’m not going to talk about [Ol’ Shoshone](https://www.youtube.com/watch?v=5IDSdzM_kx8) (in Idaho) either.
 
 Continuing on from my [last instalment](/insta-married-how-marriage-equality-impacts-me/), I wanted to reflect on another personal story.

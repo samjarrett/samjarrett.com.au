@@ -7,6 +7,8 @@ date = 2017-09-26 18:38:00+10:00
 
 A paper on the talk I gave at the [Melbourne Symfony Developers group](https://www.meetup.com/Melbourne-Symfony/) on September 26, 2017. Slides are available [here](https://www.slideshare.net/SamJarrett4/symfony-finally-swiped-right-on-envvars).
 
+<!-- more -->
+
 ![Back to the Future](back-to-the-future.gif)
 
 ## Symfony is unique as a web framework. 

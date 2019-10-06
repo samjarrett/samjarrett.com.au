@@ -11,11 +11,16 @@ highlight_code = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
-theme = "hyde"
+theme = "ergo"
 
 title = "Sam Marley-Jarrett"
 description = "Musings of a web developer in recovery"
 
 [extra]
 # Put all your custom variables here
-hyde_theme = "theme-base-0d"
+#hyde_theme = "theme-base-0d"
+profile = 'sam.jpg'
+github = "samjarrett"
+twitter = "sammyjarrett"
+email = "hi@samjarrett.com.au"
+instagram = "samjarrett"
