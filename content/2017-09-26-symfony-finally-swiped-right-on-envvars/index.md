@@ -9,7 +9,7 @@ A paper on the talk I gave at the [Melbourne Symfony Developers group](https://w
 
 <!-- more -->
 
-![Back to the Future](back-to-the-future.gif)
+<img alt="Back to the Future" src="back-to-the-future.gif" style="width: 100%;" />
 
 ## Symfony is unique as a web framework. 
 
