@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  blog:
+    build: .
+    working_dir: /blog
+    ports:
+      - 1111:1111
+    volumes:
+      - .:/blog
+    command: zola serve -i 0.0.0.0
