@@ -7,11 +7,12 @@ figure.mini_logo {
     background-color: transparent;
     border: 2px solid $accent;
     border-radius: 100%;
-    margin-top:2em;
+    margin-top: 2em;
     margin-left: 1.5em;
     margin-right: 0.5em;
     float: left;
-    > a {
+
+    >a {
         display: block;
         width: 26px;
         height: 26px;
@@ -24,16 +25,19 @@ figure.mini_logo {
     }
 }
 
-figure.mini_logo + h5 {
-    float:left;
+figure.mini_logo+p.site_title {
+    float: left;
     margin: 0;
     display: block;
     text-transform: uppercase;
     font-size: 16px;
+    line-height: 16px;
     margin-top: 40px;
     position: relative;
     z-index: 100;
-    > a {
+    font-weight: bold;
+
+    >a {
         text-decoration: none;
         color: $accent;
     }
@@ -42,27 +46,32 @@ figure.mini_logo + h5 {
 ul.social_list {
     display: inline-block;
     position: relative;
-    > li {
+
+    >li {
         margin: 0.10em 0.10em 0.10em 0.10em;
         list-style: none;
         display: inline-block;
         transition: all 0.35s ease-out;
-        > a {
+
+        >a {
             text-decoration: none;
             color: $text;
             transition: all 0.35s ease-out;
         }
-        > i {
+
+        >i {
             margin-left: 0.25em;
             transition: opacity 0.35s ease-out;
             opacity: 0.70;
         }
     }
-    > li:hover {
-        > a {
+
+    >li:hover {
+        >a {
             color: $background;
         }
-        > i {
+
+        >i {
             opacity: 1;
             transition: opacity 0.35s ease-in;
         }

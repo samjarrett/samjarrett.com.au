@@ -1,50 +1,59 @@
 {% macro mini_logo(classes, title, siteurl, logourl) %}
 <figure class="mini_logo {{ classes }}">
-    <a href="{{siteurl}}" style="background-image: url({{siteurl}}/img/{{logourl}})"></a>
+    <a href="{{siteurl}}" style="background-image: url({{siteurl}}/img/{{logourl}})" title="{{config.title}}"
+        aria-label="{{config.title}}"></a>
 </figure>
-<h5>
+<p class="site_title">
     <a href="{{siteurl}}">{{title}}</a>
-</h5>
+</p>
 {% endmacro mini_logo %}
 
 <!-- classes=any extra styling, bsize=buttonsize, extra=config.extra, siteurl=config.base_url -->
 {% macro social_list(classes, bsize, extra, rss, siteurl) %}
-<ul class="social_list {{classes}}" >
+<ul class="social_list {{classes}}">
     {% if extra.website %}
-    <li class="button {{bsize}} font_faint"><a href="https://{{extra.website}}" target="_blank">{{extra.website}}</a></li>
+    <li class="button {{bsize}} font_faint"><a href="https://{{extra.website}}" target="_blank">{{extra.website}}</a>
+    </li>
     {% endif %}
     {% if extra.github %}
-    <li class="button {{bsize}} font_faint"><a href="https://github.com/{{extra.github}}" target="_blank" >{{extra.github}}</a><i class="fab fa-github" ></i></li>
+    <li class="button {{bsize}} font_faint"><a href="https://github.com/{{extra.github}}" target="_blank"
+            aria-label="{{extra.github}} GitHub">{{extra.github}}</a><i class="fab fa-github"></i></li>
     {% endif %}
     {% if extra.twitter %}
-    <li class="button {{bsize}} font_faint"><a href="https://twitter.com/{{extra.twitter}}" target="_blank">@{{extra.twitter}}</a><i class="fab fa-twitter" ></i></li>
+    <li class="button {{bsize}} font_faint"><a href="https://twitter.com/{{extra.twitter}}" target="_blank"
+            aria-label="@{{extra.twitter}} Twitter">@{{extra.twitter}}</a><i class="fab fa-twitter"></i></li>
     {% endif %}
     {% if extra.instagram %}
-    <li class="button {{bsize}} font_faint"><a href="https://instagram.com/{{extra.instagram}}"  target="_blank">{{extra.instagram}}</a><i class="fab fa-instagram" ></i></li>
+    <li class="button {{bsize}} font_faint"><a href="https://instagram.com/{{extra.instagram}}" target="_blank"
+            aria-label="{{extra.instagram}} Instagram">{{extra.instagram}}</a><i class="fab fa-instagram"></i></li>
     {% endif %}
     {% if extra.youtube %}
-    <li class="button {{bsize}} font_faint"><a href="https://youtube.com/channel/{{extra.youtube}}" target="_blank" >{{extra.youtube}}<i class="fab fa-youtube" ></i></a></li>
+    <li class="button {{bsize}} font_faint"><a href="https://youtube.com/channel/{{extra.youtube}}"
+            target="_blank">{{extra.youtube}}<i class="fab fa-youtube"></i></a></li>
     {% endif %}
     {% if extra.linkedin %}
-    <li class="button {{bsize}} font_faint"><a href="https://www.linkedin.com/in/{{extra.linkedin}}" target="_blank">{{extra.linkedin}}</a><i class="fab fa-linkedin" ></i></li>
+    <li class="button {{bsize}} font_faint"><a href="https://www.linkedin.com/in/{{extra.linkedin}}"
+            target="_blank">{{extra.linkedin}}</a><i class="fab fa-linkedin"></i></li>
     {% endif %}
     {% if extra.email %}
-    <li class="button {{bsize}} font_faint"><a href="mailto:{{extra.email}}?subject=hi" target="_blank">say hello</a><i class="fas fa-envelope" ></i></li>
+    <li class="button {{bsize}} font_faint"><a href="mailto:{{extra.email}}?subject=hi" target="_blank"
+            aria-label="say hello (via email)">say hello</a><i class="fas fa-envelope"></i></li>
     {% endif %}
     {% if rss %}
-    <li class="button {{bsize}} font_faint"><a href="{{siteurl}}/rss.xml" target ="_blank">rss</a><i class="fas fa-rss" ></i></li>
+    <li class="button {{bsize}} font_faint"><a href="{{siteurl}}/rss.xml" target="_blank">rss</a><i
+            class="fas fa-rss"></i></li>
     {% endif %}
 </ul>
 {% endmacro social_list %}
 
 {% macro frontmatter(classes, date, word_count, read_time) %}
-<ul class="frontmatter {{classes}}" id="frontmatter">
+<ul class="frontmatter {{classes}}">
     <li>
-        <time class="article_time"  datetime="{{date}}">{{ date | date(format="%B %d, %Y") }}</time>
+        <time class="article_time" datetime="{{date}}">{{ date | date(format="%B %d, %Y") }}</time>
     </li>
-    <span class="dotDivider"></span>
+    <li class="dotDivider"></li>
     <li> {{word_count}} words </li>
-    <span class="dotDivider" ></span>
+    <li class="dotDivider"></li>
     <li> {{read_time}} min </li>
 </ul>
 {% endmacro frontmatter %}
@@ -64,32 +73,38 @@
     <div class="menu_wrapper">
         <ul class="sidebarMenuInner">
             <li>
-                <a href="{{siteurl}}" >{{title}}</a>
-                <div class="menu_div" ></div>
+                <a href="{{siteurl}}">{{title}}</a>
+                <div class="menu_div"></div>
             </li>
             {% if extra.website %}
             <li><a href="https://{{extra.website}}" target="_blank">{{extra.website}}</a></li>
             {% endif %}
             {% if extra.github %}
-            <li><a href="https://github.com/{{extra.github}}" target="_blank" >{{extra.github}}</a><i class="fab fa-github" ></i></li>
+            <li><a href="https://github.com/{{extra.github}}" target="_blank">{{extra.github}}</a><i
+                    class="fab fa-github"></i></li>
             {% endif %}
             {% if extra.twitter %}
-            <li><a href="https://twitter.com/{{extra.twitter}}" target="_blank">@{{extra.twitter}}</a><i class="fab fa-twitter" ></i></li>
+            <li><a href="https://twitter.com/{{extra.twitter}}" target="_blank">@{{extra.twitter}}</a><i
+                    class="fab fa-twitter"></i></li>
             {% endif %}
             {% if extra.instagram %}
-            <li><a href="https://instagram.com/{{extra.instagram}}"  target="_blank">{{extra.instagram}}</a><i class="fab fa-instagram" ></i></li>
+            <li><a href="https://instagram.com/{{extra.instagram}}" target="_blank">{{extra.instagram}}</a><i
+                    class="fab fa-instagram"></i></li>
             {% endif %}
             {% if extra.youtube %}
-            <li><a href="https://youtube.com/channel/{{extra.youtube}}" target="_blank" >{{extra.youtube}}<i class="fab fa-youtube" ></i></a></li>
+            <li><a href="https://youtube.com/channel/{{extra.youtube}}" target="_blank">{{extra.youtube}}<i
+                        class="fab fa-youtube"></i></a></li>
             {% endif %}
             {% if extra.linkedin %}
-            <li><a href="https://www.linkedin.com/in/{{extra.linkedin}}" target="_blank">{{extra.linkedin}}</a><i class="fab fa-linkedin" ></i></li>
+            <li><a href="https://www.linkedin.com/in/{{extra.linkedin}}" target="_blank">{{extra.linkedin}}</a><i
+                    class="fab fa-linkedin"></i></li>
             {% endif %}
             {% if extra.email %}
-            <li><a href="mailto:{{extra.email}}?subject=hi" target="_blank">say hello</a><i class="fas fa-envelope" ></i></li>
+            <li><a href="mailto:{{extra.email}}?subject=hi" target="_blank">say hello</a><i class="fas fa-envelope"></i>
+            </li>
             {% endif %}
             {% if rss %}
-            <li><a href="{{siteurl}}/rss.xml" target ="_blank">rss</a><i class="fas fa-rss" ></i></li>
+            <li><a href="{{siteurl}}/rss.xml" target="_blank">rss</a><i class="fas fa-rss"></i></li>
             {% endif %}
         </ul>
     </div>

@@ -28,14 +28,20 @@
 @import 'macros';
 @import 'shortcodes';
 
-html, body {
+html,
+body {
     background-color: $background;
     font-family: 'Montserrat', 'Raleway', sans-serif;
     font-weight: 400;
     z-index: 50;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     margin-bottom: 12px;
     line-height: 1;
@@ -67,7 +73,9 @@ h6 {
     font-size: 1.2em;
 }
 
-p,li,ul {
+p,
+li,
+ul {
     font-size: 1em;
     color: $text;
     line-height: 1.7;
@@ -104,11 +112,13 @@ article {
         border-bottom: 2px solid $outline;
         color: $text;
     }
+
     a:link {
         text-decoration: none;
         transition-property: all;
         transition-duration: 0.35s;
     }
+
     a:hover {
         outline: 0;
         border-bottom: 2px solid $accent;
@@ -118,26 +128,31 @@ article {
 
 details {
     &:hover {
-        cursor:pointer;
+        cursor: pointer;
     }
+
     &:focus {
         outline: none;
     }
-    &[open] summary ~ * {
+
+    &[open] summary~* {
         animation: sweep 400ms ease-in-out;
         outline: none;
     }
 }
 
 
-table, th, td {
+table,
+th,
+td {
     border-spacing: 0;
     border-collapse: collapse;
     border: 1px solid $text;
     padding: 0.33em;
 }
 
-th, td {
+th,
+td {
     margin: auto;
 }
 
@@ -147,18 +162,27 @@ tr {
 }
 
 @keyframes sweep {
-    0% {opacity: 0; margin-left: -10px;}
-    100% {opacity: 1; margin-left: 0px;}
+    0% {
+        opacity: 0;
+        margin-left: -10px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0px;
+    }
 }
 
 @keyframes slidein {
     0% {
         transform: translateY(-200%);
     }
+
     100% {
         transform: translateY(0);
     }
 }
+
 .user_logo {
     width: 125px;
     height: 125px;
@@ -167,8 +191,9 @@ tr {
     border: 5px solid $accent;
     border-radius: 100%;
     margin: 0 auto;
+
     // transition: all 250ms ease-in-out;
-    > a {
+    >a {
         width: 115px;
         height: 115px;
         display: block;
@@ -192,7 +217,7 @@ tr {
 }
 
 .header {
-    postion: relative;
+    position: relative;
     display: block;
     margin: auto;
     margin-top: 140px;
@@ -200,18 +225,23 @@ tr {
     margin-bottom: 50px;
     border-bottom: 0px solid #f0f0f0;
     text-align: center;
-    > h1,h2,h3 {
+
+    >h1,
+    h2,
+    h3 {
         max-width: 600px;
         margin: auto;
         margin-bottom: 0.25em;
         padding: 0.25em;
     }
-    > h2 {
+
+    >h2 {
         font-size: 2.5em;
         font-weight: 900;
         color: $accent;
     }
-    > div {
+
+    >div {
         opacity: 0.7;
         font-weight: 300;
         line-height: 1.2;
@@ -219,6 +249,7 @@ tr {
         max-width: 625px;
         display: block;
         text-align: center;
+
         * {
             max-width: 625px;
         }
@@ -249,14 +280,17 @@ tr {
     font-size: 14px;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
-    > li {
+
+    >li {
         display: inline;
     }
-    > span {
+
+    >span {
         display: inline;
     }
+
     display: block;
-    opacity: 0.3;
+    opacity: 0.8;
     transition: opacity 0.70s ease-out 1.7s;
 }
 
@@ -278,24 +312,26 @@ tr {
     padding-bottom: 30px;
     display: block;
     position: relative;
-    > article {
+
+    >article {
         display: block;
     }
 }
 
-a#article_link, a#article_link:visited {
+a.article_link,
+a.article_link:visited {
     transition: all 0.35s ease-out;
     text-decoration: none;
     color: $title;
 }
 
-a#article_link:hover {
+a.article_link:hover {
     color: $accent;
     transition: all 0.35s ease-in;
 }
 
-h1.article_title:hover + ul#frontmatter {
-    opacity:1;
+h1.article_title:hover+ul.frontmatter {
+    opacity: 1;
     transition: opacity 0.30s ease-in;
 }
 
@@ -306,10 +342,12 @@ h1.article_title {
     line-height: 42px;
     margin-top: 0px;
     font-weight: 700;
-    > a {
+
+    >a {
         border-bottom: unset;
     }
-    > a:focus {
+
+    >a:focus {
         outline: none;
     }
 }
@@ -320,19 +358,28 @@ h1.article_title {
     margin: auto;
     margin-bottom: 4em;
     max-width: 600px;
-    > ul {
+
+    >ul {
         max-width: 600px;
     }
-    > a {
+
+    >a {
         margin-top: 0.5em;
     }
-    > p {
+
+    >p {
         max-width: 600px;
         display: block;
         margin: auto;
         color: $text;
     }
-    > h1,h2,h3,h4,h5,h6 {
+
+    >h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         max-width: 600px
     }
 }
@@ -369,13 +416,15 @@ nav.pagination {
     display: block;
     z-index: 100;
     position: relative;
-    > span.prev {
+
+    >span.prev {
         display: block;
         float: left;
         z-index: 100;
     }
-    > span.next {
-        display:block;
+
+    >span.next {
+        display: block;
         float: right;
         z-index: 100;
     }
@@ -388,7 +437,8 @@ nav.pagination {
     display: block;
     position: relative;
     max-width: 625px;
-    > article {
+
+    >article {
         margin-bottom: 30px;
         position: relative;
         display: inherit;
@@ -458,21 +508,22 @@ img {
 
 figure {
     margin: 1rem 0;
-  
+
     img {
-      margin: 0;
-      padding: 0;
+        margin: 0;
+        padding: 0;
     }
+
     figcaption {
-      margin-top: 0.25rem;
-      text-align: center;
-      font-size: 0.8rem;
-      color: rgba(0,0,0,0.5);
+        margin-top: 0.25rem;
+        text-align: center;
+        font-size: 0.8rem;
+        color: rgba(0, 0, 0, 0.5);
     }
-  
+
     &.floated-left {
-      float: left;
-      margin-right: 1rem;
-      margin-left: -5rem;
+        float: left;
+        margin-right: 1rem;
+        margin-left: -5rem;
     }
-  }
+}

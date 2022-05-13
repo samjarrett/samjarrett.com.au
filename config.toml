@@ -14,7 +14,7 @@ build_search_index = false
 theme = "ergo"
 
 title = "Sam Marley-Jarrett"
-description = "Musings of a web developer in recovery"
+description = "human-centric tech. oh, and baking."
 
 [extra]
 # Put all your custom variables here
