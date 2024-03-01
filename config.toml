@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://samjarrett.com.au"
+base_url = "https://samjarrett.com"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
@@ -22,5 +22,5 @@ description = "human-centric tech. oh, and baking."
 profile = 'sam.jpg'
 github = "samjarrett"
 twitter = "sammyjarrett"
-email = "hi@samjarrett.com.au"
+email = "hi@samjarrett.com"
 instagram = "samjarrett"
