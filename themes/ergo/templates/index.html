@@ -17,7 +17,7 @@
 </header>
 
 <section class="post_list">
-  {% for page in section.pages | reverse %}
+  {% for page in section.pages %}
   <article id="{{page.title}}" class="post_list_item">
     <h1 class="article_title">
       <a href="{{page.permalink}}" class="article_link">{{page.title}}</a>
